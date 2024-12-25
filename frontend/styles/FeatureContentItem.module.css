@@ -1,0 +1,11 @@
+.featuredContentItem {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background: #ededed;
+}
+
+.featuredContentItem h3 {
+  margin: 0;
+  color: #333;
+}

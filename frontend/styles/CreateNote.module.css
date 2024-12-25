@@ -1,0 +1,32 @@
+.container{
+  background-color: #ededed;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.title{
+  font-size: 20px;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.inputField{
+  padding-left: 5px;
+}
+
+.createButton {
+  background: #38a340;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.createButton:hover {
+  background: #2d8b34;
+}

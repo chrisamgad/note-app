@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+
+  back:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: always
+    container_name: app_back_service
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    depends_on:
+      mysql:
+        condition: service_started
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_DATABASE=note_app
+      - MYSQL_DATABASE_HOSTNAME=mysql
+      - JWT_SECRET=somesecret123
+      - FRONTEND_BASE_URL=http://localhost:3000
+    entrypoint: ["/bin/sh", "/app/entrypoint.sh"]
+
+  front:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: app_front_service
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:3001  # Used by client-side code
+      - API_BASE_URL=http://back:3001                   # Used by server-side code
+    depends_on:
+      - back
+      
+  mysql:
+    image: mysql:8.0
+    restart: always
+    container_name: app_mysql_service
+    environment:
+      MYSQL_ROOT_PASSWORD: my-secret-pw
+      MYSQL_DATABASE: note_app
+    ports:
+      - "3306:3306"
+    volumes:
+      - sql_app_db_data:/var/lib/mysql
+
+volumes:
+  sql_app_db_data:

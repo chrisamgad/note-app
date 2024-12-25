@@ -1,0 +1,33 @@
+.noteItem {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.noteItem h3 {
+  margin: 0;
+  color: #333;
+}
+
+.deleteButton {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background: #d32f2f;
+}
