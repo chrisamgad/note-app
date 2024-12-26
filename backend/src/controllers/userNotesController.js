@@ -84,8 +84,8 @@ router.put('/:noteId', authenticate, noteValidator, async (req, res, next) => {
       throw new AppError('Note not found or unauthorized', 404);
     }
 
-    if (title) note.title = title;
-    if (body) note.body = body;
+    note.title = title;
+    note.body = body;
 
     await note.save();
 

@@ -8,7 +8,7 @@ const cookieParser = require('cookie-parser');
 const featuredContentRoute = require('./controllers/featuredContentControlller')
 const usersRoute = require('./controllers/usersController');
 const userNotesRoute = require('./controllers/userNotesController');
-const errorHandler = require('./middleware/errorhandler'); // Import errorHandler
+const errorHandler = require('./middleware/errorhandler');
 
 const app = express();
 
@@ -20,8 +20,6 @@ app.use(cors({
 app.use(bodyParser.json());
 
 app.use(cookieParser());
-
-
 
 // routes
 app.use('/featured-content', featuredContentRoute);
