@@ -49,7 +49,7 @@ Before running the app, ensure the following requirements are met:
 
 ## Getting Started
 
-1. Clone the repository:
+1. Clone the repository and cd into the project directory:
    ```bash
    git clone https://github.com/chrisamgad/note-app
    cd note-app
