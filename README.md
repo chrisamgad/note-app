@@ -72,8 +72,7 @@ Before running the app, ensure the following requirements are met:
 1. After accessing the app in your browser, navigate to the **Create Account** tab to register a new account.
 2. Log in with your newly created account credentials.
 3. Access the **Dashboard** tab (only available to logged-in users) to manage your notes.
-4. Start creating your notes by adding a title and body.
-5. Manage your notes by editing or deleting them as needed.
+4. Start managing your notes by creating or deleting them as needed.
 ![Screenshot 2024-12-26 041103](https://github.com/user-attachments/assets/dd5d9e74-3f28-4ce6-8e1c-58856a8b791e)
 ![Screenshot 2024-12-26 041623](https://github.com/user-attachments/assets/e173dfb7-9e6f-4607-a41c-9b4d2488f470)
 
