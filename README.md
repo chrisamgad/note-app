@@ -79,8 +79,6 @@ Before running the app, ensure the following requirements are met:
 ---
 ## ERD for DB
 ![Screenshot 2024-12-25 050753](https://github.com/user-attachments/assets/706a5a21-7a3b-421d-af86-a46d8bbf0dde)
-![image](https://github.com/user-attachments/assets/58854053-061b-4e73-a78c-82e8cd120e99)
-
 
 ## API Specifications
 
