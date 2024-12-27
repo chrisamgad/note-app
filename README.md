@@ -82,7 +82,6 @@ Before running the app, ensure the following requirements are met:
 
 ## API Specifications
 
-### Base URLs
  Note: Cookies-based authentication is used so you need to log in before being able to access the protected endpoints.
 
 - **Backend BASE URL**: `http://localhost:3001`
